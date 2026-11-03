@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Movimientos </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="contenedor">
+        <h1>Cajero — Mis Movimientos</h1>
+
+        <section class="tarjeta">
+            <h2>Nuevo movimiento</h2>
+            <input type="text" id="input-tipo" placeholder="Tipo (Depósito / Extracción / Pago de servicio)">
+            <input type="number" id="input-monto" placeholder="Monto" min="0.01" step="0.01">
+            <input type="text" id="input-descripcion" placeholder="Descripción">
+            <button type="button" id="boton-agregar">+ Agregar</button>
+        </section>
+
+        <section class="tarjeta">
+            <input type="text" id="input-buscador" placeholder="Buscar por tipo o descripción...">
+        </section>
+
+        <p id="mensaje-feedback"></p>
+
+        <section class="tarjeta">
+            <h2>Movimientos registrados</h2>
+            <div id="contenedor-items"></div>
+        </section>
+    </main>
+
+    <script src="main.js" defer></script>
+</body>
+</html>
